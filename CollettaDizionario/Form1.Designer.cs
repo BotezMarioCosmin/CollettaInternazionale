@@ -40,6 +40,9 @@
             this.labelTotaleVersato = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.labelValuta = new System.Windows.Forms.Label();
+            this.buttonOrdinaNome = new System.Windows.Forms.Button();
+            this.buttonOrdinaImporto = new System.Windows.Forms.Button();
+            this.buttonOk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelTotal
@@ -57,7 +60,7 @@
             // 
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(8, 52);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(205, 295);
             this.listView1.TabIndex = 4;
@@ -68,7 +71,7 @@
             // 
             this.buttonTotale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTotale.Location = new System.Drawing.Point(549, 2);
-            this.buttonTotale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonTotale.Margin = new System.Windows.Forms.Padding(2);
             this.buttonTotale.Name = "buttonTotale";
             this.buttonTotale.Size = new System.Drawing.Size(95, 34);
             this.buttonTotale.TabIndex = 5;
@@ -80,7 +83,7 @@
             // 
             this.textBoxTotale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTotale.Location = new System.Drawing.Point(451, 6);
-            this.textBoxTotale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTotale.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTotale.Name = "textBoxTotale";
             this.textBoxTotale.Size = new System.Drawing.Size(95, 29);
             this.textBoxTotale.TabIndex = 6;
@@ -89,7 +92,7 @@
             // 
             this.textBoxImporto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxImporto.Location = new System.Drawing.Point(454, 57);
-            this.textBoxImporto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxImporto.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxImporto.Name = "textBoxImporto";
             this.textBoxImporto.Size = new System.Drawing.Size(191, 29);
             this.textBoxImporto.TabIndex = 8;
@@ -100,7 +103,7 @@
             // 
             this.buttonAggiungi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAggiungi.Location = new System.Drawing.Point(245, 98);
-            this.buttonAggiungi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAggiungi.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAggiungi.Name = "buttonAggiungi";
             this.buttonAggiungi.Size = new System.Drawing.Size(131, 34);
             this.buttonAggiungi.TabIndex = 7;
@@ -112,7 +115,7 @@
             // 
             this.textBoxNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNome.Location = new System.Drawing.Point(247, 57);
-            this.textBoxNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNome.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(205, 29);
             this.textBoxNome.TabIndex = 9;
@@ -123,7 +126,7 @@
             // 
             this.buttonCancella.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancella.Location = new System.Drawing.Point(380, 98);
-            this.buttonCancella.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCancella.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancella.Name = "buttonCancella";
             this.buttonCancella.Size = new System.Drawing.Size(131, 34);
             this.buttonCancella.TabIndex = 10;
@@ -135,7 +138,7 @@
             // 
             this.buttonModifica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonModifica.Location = new System.Drawing.Point(513, 98);
-            this.buttonModifica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonModifica.Margin = new System.Windows.Forms.Padding(2);
             this.buttonModifica.Name = "buttonModifica";
             this.buttonModifica.Size = new System.Drawing.Size(131, 34);
             this.buttonModifica.TabIndex = 11;
@@ -147,7 +150,7 @@
             // 
             this.labelTotaleVersato.AutoSize = true;
             this.labelTotaleVersato.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotaleVersato.Location = new System.Drawing.Point(242, 151);
+            this.labelTotaleVersato.Location = new System.Drawing.Point(242, 265);
             this.labelTotaleVersato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTotaleVersato.Name = "labelTotaleVersato";
             this.labelTotaleVersato.Size = new System.Drawing.Size(172, 26);
@@ -158,7 +161,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(333, 228);
+            this.comboBox1.Location = new System.Drawing.Point(333, 303);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(92, 33);
             this.comboBox1.TabIndex = 13;
@@ -167,18 +170,56 @@
             // 
             this.labelValuta.AutoSize = true;
             this.labelValuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelValuta.Location = new System.Drawing.Point(242, 231);
+            this.labelValuta.Location = new System.Drawing.Point(242, 306);
             this.labelValuta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelValuta.Name = "labelValuta";
             this.labelValuta.Size = new System.Drawing.Size(86, 26);
             this.labelValuta.TabIndex = 14;
             this.labelValuta.Text = "Valuta: ";
             // 
+            // buttonOrdinaNome
+            // 
+            this.buttonOrdinaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOrdinaNome.Location = new System.Drawing.Point(245, 150);
+            this.buttonOrdinaNome.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonOrdinaNome.Name = "buttonOrdinaNome";
+            this.buttonOrdinaNome.Size = new System.Drawing.Size(192, 34);
+            this.buttonOrdinaNome.TabIndex = 15;
+            this.buttonOrdinaNome.Text = "Ordina Nome";
+            this.buttonOrdinaNome.UseVisualStyleBackColor = true;
+            this.buttonOrdinaNome.Click += new System.EventHandler(this.buttonOrdinaNome_Click);
+            // 
+            // buttonOrdinaImporto
+            // 
+            this.buttonOrdinaImporto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOrdinaImporto.Location = new System.Drawing.Point(443, 150);
+            this.buttonOrdinaImporto.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonOrdinaImporto.Name = "buttonOrdinaImporto";
+            this.buttonOrdinaImporto.Size = new System.Drawing.Size(198, 34);
+            this.buttonOrdinaImporto.TabIndex = 16;
+            this.buttonOrdinaImporto.Text = "Ordina Importo";
+            this.buttonOrdinaImporto.UseVisualStyleBackColor = true;
+            this.buttonOrdinaImporto.Click += new System.EventHandler(this.buttonOrdinaImporto_Click);
+            // 
+            // buttonOk
+            // 
+            this.buttonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOk.Location = new System.Drawing.Point(431, 303);
+            this.buttonOk.Name = "buttonOk";
+            this.buttonOk.Size = new System.Drawing.Size(50, 33);
+            this.buttonOk.TabIndex = 17;
+            this.buttonOk.Text = "OK";
+            this.buttonOk.UseVisualStyleBackColor = true;
+            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 354);
+            this.Controls.Add(this.buttonOk);
+            this.Controls.Add(this.buttonOrdinaImporto);
+            this.Controls.Add(this.buttonOrdinaNome);
             this.Controls.Add(this.labelValuta);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.labelTotaleVersato);
@@ -191,7 +232,7 @@
             this.Controls.Add(this.buttonTotale);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.labelTotal);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -213,6 +254,9 @@
         private System.Windows.Forms.Label labelTotaleVersato;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label labelValuta;
+        private System.Windows.Forms.Button buttonOrdinaNome;
+        private System.Windows.Forms.Button buttonOrdinaImporto;
+        private System.Windows.Forms.Button buttonOk;
     }
 }
 

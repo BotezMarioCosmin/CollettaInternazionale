@@ -15,6 +15,7 @@ namespace CollettaDizionario
     public partial class Form1 : Form
     {
         Dictionary<string, float> colletta = new Dictionary<string, float>();
+        string[] valute = new string[] { "€", "$", "£"};
         float totale = 0;
         float totaleDaVersare = 0;
         public Form1()
@@ -23,6 +24,40 @@ namespace CollettaDizionario
             listView1.Clear();
             listView1.Columns.Add("Nome");
             listView1.Columns.Add("Importo");
+
+            for (int i = 0; i < valute.Length; i++)
+            {
+                comboBox1.Items.Add(valute[i]);
+            }
+            /*
+            Dictionary<Persona,Importo> tabella=new Dictionary<Persona,Importo>(); 
+
+            Object o1=new Persona("P01","Rossi","Mario");
+            Object o2=new Persona("P02","Bianchi","Mario");
+            Object o3=new Persona("P01","Rossi","Mariolino");
+
+            Persona p1=new Persona("P01","Rossi","Mario");
+            Persona p2=new Persona("P02","Bianchi","Mario");
+            Persona p3=new Persona("P01","Rossi","Mariolino");
+
+            Console.WriteLine(p1.Equals(p2));
+            Console.WriteLine(p1.Equals(p3));
+
+            Console.WriteLine(o1.Equals(o2));
+            Console.WriteLine(o1.Equals(o3));
+
+            Importo i1=new Importo(50, "euro");
+            Importo i2=new Importo(500, "euro");
+
+            tabella[p1]=i1;
+
+            Console.WriteLine(tabella[p1]);
+
+            tabella[p3]=i2;
+
+            Console.WriteLine(tabella[p1]);
+            Console.WriteLine(tabella[p3]);
+            */
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -128,14 +163,36 @@ namespace CollettaDizionario
             refreshTotal(colletta);
         }
 
-        public void refreshTotal(Dictionary<string,float> dict)
+        public void refreshTotal(Dictionary<string, float> dict)
         {
             totaleDaVersare = 0;
             foreach (KeyValuePair<string, float> kvp in dict)
             {
                 totaleDaVersare += kvp.Value;
             }
-            labelTotaleVersato.Text = "Totale versato: "+totaleDaVersare;
+            labelTotaleVersato.Text = "Totale versato: " + totaleDaVersare;
+        }
+
+        private void buttonOrdinaNome_Click(object sender, EventArgs e)
+        {
+
+        }
+        /*
+        public Dictionary<string, float> OrdinaDizionarioNome (Dictionary<string, float> d)
+        {
+            
+            return;
+        }
+        */
+        private void buttonOrdinaImporto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
+            string a = comboBox1.Text;
+            MessageBox.Show("Hai selezionato la valuta: " +a);
         }
     }
 }
