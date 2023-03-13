@@ -63,7 +63,6 @@ namespace CollettaDizionario
                 {
                     MessageBox.Show("Valori non validi!");
                 }
-
             }
             textBoxNome.Text = "Nome";
             textBoxImporto.Text = "Importo";
