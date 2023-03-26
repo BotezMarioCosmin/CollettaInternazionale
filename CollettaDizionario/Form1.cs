@@ -175,18 +175,42 @@ namespace CollettaDizionario
 
         private void buttonOrdinaNome_Click(object sender, EventArgs e)
         {
-
+            OrdinaNome(colletta);
+            listViewRefresh(colletta);
         }
-        /*
-        public Dictionary<string, float> OrdinaDizionarioNome (Dictionary<string, float> d)
-        {
-            
-            return;
-        }
-        */
         private void buttonOrdinaImporto_Click(object sender, EventArgs e)
         {
+            OrdinaImporto(colletta);
+            listViewRefresh(colletta);
+        }
 
+        public Dictionary<string, float> OrdinaNome(Dictionary<string, float> dizionarioDaOrdinare)
+        {
+            var dizionarioOrdinato = dizionarioDaOrdinare.OrderBy(x => x.Key);
+
+            var nuovoDizionario = new Dictionary<string, float>();
+
+            foreach (var elemento in dizionarioOrdinato)
+            {
+                nuovoDizionario.Add(elemento.Key, elemento.Value);
+            }
+
+            return nuovoDizionario;
+        }
+
+
+        public Dictionary<string, float> OrdinaImporto(Dictionary<string, float> dizionarioDaOrdinare)
+        {
+            var dizionarioOrdinato = dizionarioDaOrdinare.OrderBy(x => x.Value);
+
+            var nuovoDizionario = new Dictionary<string, float>();
+
+            foreach (var elemento in dizionarioOrdinato)
+            {
+                nuovoDizionario.Add(elemento.Key, elemento.Value);
+            }
+
+            return nuovoDizionario;
         }
 
         private void buttonOk_Click(object sender, EventArgs e)
